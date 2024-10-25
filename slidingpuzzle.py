@@ -3,7 +3,7 @@ from random import *
 
 root=Tk()
 root.geometry('600x600')
-root.configure(bg="grey")
+root.configure(bg="#B85042")
 global l1
 #exit function
 def exit():
@@ -81,31 +81,31 @@ def move(button_id):
 
 
 
-b1=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey" ,command=lambda:move(1))
+b1=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE" ,command=lambda:move(1))
 b1.place(x=100,y=100)
 
-b2=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(2))
+b2=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(2))
 b2.place(x=100,y=200)
 
-b3=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(3))
+b3=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(3))
 b3.place(x=100,y=300)
 
-b4=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(4))
+b4=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(4))
 b4.place(x=200,y=100)
 
-b5=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(5))
+b5=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(5))
 b5.place(x=200,y=200)
 
-b6=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(6))
+b6=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(6))
 b6.place(x=200,y=300)
 
-b7=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(7))
+b7=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(7))
 b7.place(x=300,y=100)
 
-b8=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(8))
+b8=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(8))
 b8.place(x=300,y=200)
 
-b9=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="dark grey",command=lambda:move(9))
+b9=Button(root,text=num_assign(),height=5,width=10,activebackground="light green",bg="#A7BEAE",command=lambda:move(9))
 b9.place(x=300,y=300)
 
 
