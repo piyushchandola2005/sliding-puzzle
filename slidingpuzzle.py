@@ -24,14 +24,17 @@ def swap(button_1,button_2):
     temp=button_1["text"]
     button_1["text"]=button_2["text"]
     button_2["text"]=temp
+
+def corner_tiles(clicked_button,move1,move2):
+    if (move1["text"]==" " ):
+            swap(clicked_button,move1)
+    if (move2["text"]==" "):
+            swap(move2,clicked_button)
     
 def move(button_id):
     
     if button_id==1:
-        if (b2["text"]==" " ):
-            swap(b1,b2)
-        if (b4["text"]==" "):
-            swap(b1,b4)
+        corner_tiles(b1,b2,b4)
 
     if button_id==2:
         if (b1["text"]==" " ):
@@ -41,12 +44,8 @@ def move(button_id):
         if (b5["text"]==" "):
             swap(b2,b5)
 
-        pass
     if button_id==3:
-        if (b2["text"]==" " ):
-            swap(b3,b2)
-        if (b6["text"]==" "):
-            swap(b3,b6)
+        corner_tiles(b3,b2,b6)
         
     if button_id==4:
         if (b1["text"]==" " ):
@@ -72,12 +71,7 @@ def move(button_id):
         if (b5["text"]==" "):
             swap(b6,b5)
     if button_id==7:
-        
-        if (b8["text"]==" " ):
-            swap(b7,b8)
-        if (b4["text"]==" "):
-            swap(b7,b4)
-        
+        corner_tiles(b7,b8,b4)
     if button_id==8:
         if (b9["text"]==" " ):
             swap(b9,b8)
@@ -86,10 +80,7 @@ def move(button_id):
         if (b5["text"]==" "):
             swap(b8,b5)
     if button_id==9:
-        if (b8["text"]==" " ):
-            swap(b9,b8)
-        if (b6["text"]==" "):
-            swap(b9,b6)
+        corner_tiles(b9,b8,b6)
     win()
 
 
