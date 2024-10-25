@@ -79,11 +79,11 @@ def move(button_id):
         corner_tiles(b9,b8,b6)
     win()
 
+img_label=PhotoImage(file="wallpaperflare.com_wallpaper (1).jpg")
 
-
-b1=Button(root,text=num_assign(),height=5,width=10,fg="white",font=('times 10 bold'),activebackground="#A43820",bg="#46211A" ,command=lambda:move(1))
+b1=Button(root,text=num_assign(),image=photo,height=5,width=10,fg="white",font=('times 10 bold'),activebackground="#A43820",bg="#46211A" ,command=lambda:move(1))
 b1.place(x=100,y=100)
-
+img_label= Label(image=click_btn)
 b2=Button(root,text=num_assign(),height=5,width=10,fg="white",font=('times 10 bold'),activebackground="#A43820",bg="#46211A",command=lambda:move(2))
 b2.place(x=100,y=200)
 
