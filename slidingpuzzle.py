@@ -14,8 +14,17 @@ l1=["1","2","3","4","5","6","7","8"," "]
 def win():
     if (b1["text"]=="1" and b2["text"]=="4"and b3["text"]=="7" and b4["text"]=="2" and b5["text"]=="5"
     and b6["text"]=="8" and b7["text"]=="3" and b8["text"]=="6"and b9["text"]==" "):
-        b10=Button(root,height=2 ,width= 20 ,text="you won,click to exit",command=exit)
-        b10.place(x=200,y=400)
+        b1.destroy()
+        b2.destroy()
+        b3.destroy()
+        b4.destroy()
+        b5.destroy()
+        b6.destroy()
+        b7.destroy()
+        b8.destroy()
+        b9.destroy()
+        b10=Button(root,height=10 ,width= 30 ,text="you won,click to exit",command=exit)
+        b10.place(x=200,y=200)
         
 
 #will assign number to button
