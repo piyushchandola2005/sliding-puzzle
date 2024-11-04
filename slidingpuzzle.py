@@ -14,7 +14,6 @@ l1=["1","2","3","4","5","6","7","8"," "]
 def win():
     if (b1["text"]=="1" and b2["text"]=="4"and b3["text"]=="7" and b4["text"]=="2" and b5["text"]=="5"
     and b6["text"]=="8" and b7["text"]=="3" and b8["text"]=="6"and b9["text"]==" "):
-<<<<<<< Updated upstream
         b1.destroy()
         b2.destroy()
         b3.destroy()
@@ -24,14 +23,9 @@ def win():
         b7.destroy()
         b8.destroy()
         b9.destroy()
-        b10=Button(root,height=10 ,width= 30 ,text="you won,click to exit",command=exit)
+        b10=Button(root,height=5 ,width= 30 ,text="you won,click to exit",command=exit)
         b10.place(x=200,y=200)
-=======
->>>>>>> Stashed changes
         
-        b1.destroy()
-        b10=Button(root,height=2 ,width= 20, background="cyan",text="you won,click to exit",command=exit)
-        b10.place(x=200,y=400)
 
 #will assign number to button
 def num_assign():
@@ -94,10 +88,7 @@ def move(button_id):
         corner_tiles(b9,b8,b6)
     win()
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 b1=Button(root,text=num_assign(),height=5,width=10,fg="white",font=('times 10 bold'),activebackground="#A43820",bg="#46211A" ,command=lambda:move(1))
 b1.place(x=100,y=100)
 
@@ -124,6 +115,7 @@ b8.place(x=300,y=200)
 
 b9=Button(root,text=num_assign(),height=5,width=10,fg="white",font=('times 10 bold'),activebackground="#A43820",bg="#46211A",command=lambda:move(9))
 b9.place(x=300,y=300)
+
 
 
 root.mainloop()
